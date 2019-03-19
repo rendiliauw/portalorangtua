@@ -1,0 +1,5 @@
+RewriteEngine On
+
+RewriteRule ^index index.php [NC,L]
+RewriteRule ^inputForm inputForm.php [NC,L]
+RewriteRule ^home home.php [NC,L]
