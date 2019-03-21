@@ -102,6 +102,15 @@
     <!-- Sweet-Alert  -->
     <script src="assets/node_modules/sweetalert/sweetalert.min.js"></script>
     <script src="assets/node_modules/wizard/steps.js"></script>
+    <script>
+        $("#pilihAnak").on("change",function(){
+
+            var nama = $("#pilihAnak option:selected").attr('nama');
+
+            $("#namaLengkap").val(nama);
+
+        });
+    </script>
     
    
    

@@ -1,6 +1,12 @@
 <?php include 'header.php'; 
 ?>
 
+<?php 
+    $nama = ['rendi','hendri','edo','ahong'];
+
+    
+?>
+
 <!-- Page wrapper  -->
         <!-- ============================================================== -->
         <div class="page-wrapper">
@@ -42,21 +48,68 @@
                     <div class="col-lg-4 col-xlg-3 col-md-5">
                         <div class="card">
                             <div class="card-body">
-                                <center class="m-t-30"> <img src="assets/images/users/boy.png" class="img-circle" width="150" />
-                                    <h4 class="card-title m-t-10">Raditya Dika</h4>
-                                    <h6 class="card-subtitle">Student</h6>
-                                    <div class="row text-center justify-content-md-center">
-                                        <div class="col-4"><a href="javascript:void(0)" class="link"><i class="icon-people"></i> <font class="font-medium">254</font></a></div>
-                                        <div class="col-4"><a href="javascript:void(0)" class="link"><i class="icon-picture"></i> <font class="font-medium">54</font></a></div>
+                                <div id="carouselExampleIndicators3" class="carousel slide" data-ride="carousel">
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#carouselExampleIndicators3" data-slide-to="0" class="active"></li>
+                                        <li data-target="#carouselExampleIndicators3" data-slide-to="1"></li>
+                                        <li data-target="#carouselExampleIndicators3" data-slide-to="2"></li>
+                                    </ol>
+                                    <div class="carousel-inner" role="listbox">
+                                        <div class="carousel-item active">
+                                            <img class="img-responsive" src="assets/images/big/img6.jpg" alt="First slide">
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <h3 class="text-white">First title goes here</h3>
+                                                <p>this is the subcontent you can use this</p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="img-responsive" src="assets/images/big/img3.jpg" alt="Second slide">
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <h3 class="text-white">Second title goes here</h3>
+                                                <p>this is the subcontent you can use this</p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="img-responsive" src="assets/images/big/img4.jpg" alt="Third slide">
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <h3 class="text-white">Third title goes here</h3>
+                                                <p>this is the subcontent you can use this</p>
+                                            </div>
+                                        </div>
                                     </div>
-                                </center>
+                                    <a class="carousel-control-prev" href="#carouselExampleIndicators3" role="button" data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#carouselExampleIndicators3" role="button" data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
                             </div>
                             <div>
                                 <hr> </div>
-                            <div class="card-body"> <small class="text-muted">Email address </small>
-                                <h6>radityadika@gmail.com</h6> <small class="text-muted p-t-30 db">Phone</small>
-                                <h6>0812-6602-2033</h6> <small class="text-muted p-t-30 db">Address</small>
-                                <h6>Jl. tanjung duren Raya no.6a Grogol petamburan - jakbar</h6>
+                            <div class="card-body">    
+                                <div class="row">  
+                              
+                                    <div class="form-group col-10">
+                                        <select class="form-control" name="anak" id="pilihAnak">
+                                            <option value="#"  >--Pilih Anak--</option>
+                                            <?php for($i=1; $i<count($nama); $i++) {?>
+                                            <option value="<?php echo $i; ?>"  nama="<?php  echo $nama[$i]; ?>" > <?php echo $nama[$i]; ?></option>
+                                            <?php } ?>
+                                        </select>                               
+                                    </div>
+                            </div>    
+
+                                <small class="text-muted">Sekolah</small>
+                                    <h6>Smak 1 Bpk Penabur Jakarta</h6> 
+                                <small class="text-muted p-t-30 db">Kelas</small>
+                                    <h6>IPA 3</h6> 
+                                <small class="text-muted p-t-30 db">No. SPJ</small>
+                                    <h6>111506-101</h6>
+                                <small class="text-muted p-t-30 db">Email Penabur</small>
+                                    <h6>user@gmail.com</h6>    
                                <small class="text-muted p-t-30 db">Social Profile</small>
                                 <br/>
                                 <button class="btn btn-circle btn-secondary"><i class="fab fa-facebook"></i></button>
@@ -83,10 +136,10 @@
                                         <div class="row">
                                                                                       
                                             <div class="col-sm-6 col-xs-6">
-                                                <form>
+                                                <form class="formSiswa" name="formSiswa">
                                                     <div class="form-group">
                                                         <label for="exampleInputEmail1">Nama Lengkap</label>
-                                                        <input type="text" class="form-control" value="" name="">
+                                                        <input type="text" class="form-control" value="" id="namaLengkap" name="">
                                                     </div>
                                                     <div class="form-group">
                                                         <label for="exampleInputEmail1">Nama Panggilan</label>
@@ -179,7 +232,7 @@
 
                                           
                                             <div class="col-sm-6 col-xs-6">
-                                                <form>
+                                                <form class="formSiswa" name="pilihSiswa">
                                                     <div class="form-group">
                                                         <label for="exampleInputEmail1">Jumlah Saudara Angkat</label>
                                                         <input type="text" class="form-control" value="" name="">
@@ -593,7 +646,7 @@
                                                     <input type="text" class="form-control" value="" name="">
                                                 </div>
                                                 <div class="form-group">
-                                                    <label for="exampleInputEmail1">RT KTP/label>
+                                                    <label for="exampleInputEmail1">RT KTP</label>
                                                     <input type="text" class="form-control" value="" name="">
                                                 </div>
                                                 <div class="form-group">
