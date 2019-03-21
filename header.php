@@ -13,7 +13,7 @@
     <meta name="author" content="">
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16"  href="assets/images/logo1-icon.png">
-    <title>Elegant Admin Template - The Ultimate Multipurpose admin template</title>
+    <title>Portal Orang Tua - Bpk penabur jakarta barat</title>
     
     <!--wizard css--->
     <link href="assets/node_modules/wizard/steps.css" rel="stylesheet">
@@ -37,7 +37,7 @@
     <div class="preloader">
         <div class="loader">
             <div class="loader__figure"></div>
-            <p class="loader__label">Elegant admin</p>
+            <p class="loader__label">Portal Orang Tua</p>
         </div>
     </div>
     <!-- ============================================================== -->
