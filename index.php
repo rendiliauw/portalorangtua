@@ -4,7 +4,7 @@
 
     include 'header.php';
     
-    include 'konten.php';
+    include 'inputHome.php';
 
     include 'footer.php';
   

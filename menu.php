@@ -16,7 +16,7 @@ $activePage = str_replace('.php', '', basename($_SERVER['PHP_SELF']));
                 <nav class="sidebar-nav">
                     <ul id="sidebarnav">
                         <li><a href="<?php echo $base_url ?>">Dashboard<i class="icon-speedometer"></i></a></li>    
-                        <li><a href="<?php echo $base_url ?>inputForm">Input Data Anak<i class="ti-pencil-alt"></i></a></li>                 
+                        <li><a href="<?php echo $base_url ?>">Input Data Anak<i class="ti-pencil-alt"></i></a></li>                 
 
                        <li> <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-layout-grid2"></i><span class="hide-menu">Master Data</span></a>
                             <ul aria-expanded="false" class="collapse">

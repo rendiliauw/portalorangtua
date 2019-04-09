@@ -326,7 +326,7 @@
                                     </div>
                                 </div>
                                 <!--Tab orang tua-->
-                                <div class="tab-pane" id="profile" role="tabpanel">
+                                <div class="tab-panel" id="profile" role="tabpanel">
                                     <div class="card-body">
                                     <div class="row">
                                                                                       

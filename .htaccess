@@ -2,4 +2,7 @@ RewriteEngine On
 
 RewriteRule ^index index.php [NC,L]
 RewriteRule ^inputForm inputForm.php [NC,L]
+RewriteRule ^inputHome inputhome.php [NC,L]
+RewriteRule ^inputData inputload.php [NC,L]
+RewriteRule ^dokument inputRelay.php [NC,L]
 RewriteRule ^home home.php [NC,L]
